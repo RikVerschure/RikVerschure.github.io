@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel = 'icon' href = 'panda.png'>
+		<link rel = 'stylesheet' href = 'Blog.css'>
+		
+		<title>Weekly Blog</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			//Show content of C2
+			$("#C2C").show();
+			$("#C2").addClass("active");
+			localStorage.setItem("lastID","#C2C");
+		
+			//When list item is clicked (Used for menu)
+			$("a").click(function(){
+				var id = $(this).attr('id');
+				var element = "#" + id + 'C';				
+				var lastID = localStorage.getItem("lastID");
+				var lastElement = lastID.slice(0,-1);
+				$(lastID).hide();
+				$(lastElement).removeClass("active");
+				$(element).show();
+				$(this).addClass("active");
+				localStorage.setItem("lastID",element);
+			});
+		});		
+		</script>
+	</head>
+	
+	<body>
+		<div class = 'header'>
+			<h1 style = 'display:inline;'>Wekelijkse Blog Rik Verschure</h1>
+		</div>
+			
+		
+		<div class = 'row'>	
+			<div class = 'col-3 col-m-6 topnav'>		
+				<nav>
+					<a id = 'C2'>C2</a>
+					<a id = 'C3'>C3</a>
+					<a id = 'C4'>C4</a>
+					<a id = 'C5'>C5</a>
+					<a id = 'C6'>C6</a>
+				</nav>
+			</div>
+			<div class = 'col-3 col-m-6 topnav'>		
+				<nav>
+					<a id = 'C7'>C7</a>
+					<a id = 'C8'>C8</a>
+					<a id = 'C9'>C9</a>
+					<a id = 'C10'>C10</a>
+					<a id = 'C11'>C11</a>
+				</nav>
+			</div>			
+			<div class = 'col-3 col-m-6 topnav'>		
+				<nav>
+					<a id = 'C12'>C12</a>
+					<a id = 'C13'>C13</a>
+					<a id = 'C14'>C14</a>
+					<a id = 'C15'>C15</a>
+					<a id = 'C16'>C16</a>
+				</nav>
+			</div>
+			<div class = 'col-3 col-m-6 topnav'>		
+				<nav>
+					<a id = 'C17'>C17</a>
+					<a id = 'C18'>C18</a>
+					<a id = 'C19'>C19</a>
+					<a id = 'C20'>C20</a>
+					<a id = 'C21'>C21</a>
+				</nav>
+			</div>
+		</div>
+		
+		
+		<div class = 'row'>		
+			<div class="col-8 col-m-8">
+				<div class = 'content' id = 'C2C'>
+					<h1>C2</h1>
+					<p>Geen informatie beschikbaar...</p>
+					
+				</div>
+				<div class = 'content' id = 'C3C'>
+					<h1>C3</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C4C'>
+					<h1>C4</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C5C'>
+					<h1>C5</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C6C'>
+					<h1>C6(E/S)</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C7C'>
+					<h1>C7(S1)</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C8C'>
+					<h1>C8(S2)</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C9C'>
+					<h1>C9</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C10C'>
+					<h1>C10</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C11C'>
+					<h1>C11</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C12C'>
+					<h1>C12</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C13C'>
+					<h1>C13</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C14C'>
+					<h1>C14</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C15C'>
+					<h1>C15</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C16C'>
+					<h1>C16</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C17C'>
+					<h1>C17</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C18C'>
+					<h1>C18</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C19C'>
+					<h1>C19</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C20C'>
+					<h1>C20</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+				<div class = 'content' id = 'C21C'>
+					<h1>C21(S5)</h1>
+					<p>Geen informatie beschikbaar...</p>
+				</div>
+			</div>
+			
+			<div class="col-4 col-m-4">
+				<div class = 'aside'>
+					<h2 style = 'margin:0px;'>Hard Skills</h2>
+					<h3>Feedback</h3>					
+					<p>Gedurende dit project wil ik leren op een opbouwende manier feedback te geven en beter feedback ontvangen.</p>
+					<h3>Documentatie</h3>
+					<p>Gedurende dit project wil ik leren gestructureerde documenten op te stellen en de kwaliteit van de inhoud te verbeteren.</p>
+					<h2>Soft Skills</h2>
+					<h3>Resultaatgericht</h3>					
+					<p>Gedurende dit project wil ik resultaatgericht werken, zodat geen tijd verloren gaat aan overbodige zaken.</p>
+					<h3>Gedrevenheid</h3>
+					<p>Gedurende dit project wil ik gedreven te werk gaan. Denk hierbij aan op tijd komen en géén 8-5 mentaliteit.</p>
+					<img src = 'panda.png' style = 'width:125px;height:125px;margin:0px;padding:0px;align:center'>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class = 'footer'>
+			<h3>Bedankt voor het bekijken van deze wekelijkse blog!</h3>
+		</div>
+		
+	</body>
+</html>
