@@ -13,12 +13,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 		$(document).ready(function(){
-			//Show content of C2
-			$("#C2C").show();
-			$("#C2").addClass("active");
-			localStorage.setItem("lastID","#C2C");
+			//Show content of last opened element
+			var last = localStorage.getItem("lastID");
+			$(last).show();
+			$(last.slice(0,-1)).addClass("active");
+			localStorage.setItem("lastID",last);
 		
-			//When list item is clicked (Used for menu)
+			//When a link is clicked (Used for menu)
 			$("a").click(function(){
 				var id = $(this).attr('id');
 				var element = "#" + id + 'C';				
@@ -99,7 +100,8 @@
 				</div>
 				<div class = 'content' id = 'C5C'>
 					<h1>C5</h1>
-					<p>Geen informatie beschikbaar...</p>
+					<p>De concepten van de handschoen zijn deze week uitgewerkt. Hiermee is op verschillende manieren geprototyped. Alle concepten zijn individueel uitgewerkt met elk een eigen unieke ontwerpwijze. Zo is <a href ='https://en.wikipedia.org/wiki/Bowden_cable'>de Bowden Cable</a> uitgewerkt met een handschoen waar vervolgens segmenten van rietjes aan gemaakt zijn. Door hier een draad doorheen te trekken kan het principe van de Bowden Tube getest worden. Verder is er getest met tandwielen en het aansturen hiervan. Dit is uiteindelijk met <a href='http://knex.nl/'>Knex</a> gemaakt. </p>
+					<img src = 'handschoen.gif' alt = 'Handschoen Bowden Tube Concept' style = 'width:10em;height:20em;'></img>
 				</div>
 				<div class = 'content' id = 'C6C'>
 					<h1>C6(E/S)</h1>
