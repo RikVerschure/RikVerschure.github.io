@@ -15,6 +15,9 @@
 		$(document).ready(function(){
 			//Show content of last opened element
 			var last = localStorage.getItem("lastID");
+			if(last == null){
+				last = "#C2C";
+			}
 			$(last).show();
 			$(last.slice(0,-1)).addClass("active");
 			localStorage.setItem("lastID",last);
